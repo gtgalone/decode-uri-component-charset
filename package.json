@@ -1,0 +1,47 @@
+{
+	"name": "decode-uri-component-charset",
+	"version": "1.0.1",
+	"description": "Decode URI Component with Charset such as 'euc-kr' without tears.",
+	"license": "MIT",
+	"repository": "gtgalone/decode-uri-component-charset",
+	"author": {
+		"name": "Jehun Seem",
+		"email": "jehunseem@gmail.com",
+		"url": "https://github.com/gtgalone"
+	},
+	"scripts": {
+		"build:cjs": "tsc",
+		"build:esm": "tsc -m esNext --outDir esm",
+		"build": "yarn build:cjs && yarn build:esm"
+	},
+	"main": "lib/index.js",
+	"module": "esm/index.js",
+	"types": "lib/index.d.ts",
+	"typings": "lib/index.d.ts",
+	"files": [
+		"lib",
+		"esm"
+	],
+	"keywords": [
+		"decodeURI",
+		"decode-uri",
+		"decodeURIComponent",
+		"decode-uri-component",
+		"charset",
+		"euc-kr",
+		"euckr",
+		"utf8",
+		"utf-8"
+	],
+	"dependencies": {
+		"iconv-lite": "0.5.0"
+	},
+	"devDependencies": {
+		"@types/node": "12.12.18",
+		"tslint": "5.20.1",
+		"tslint-config-prettier": "1.18.0",
+		"tslint-eslint-rules": "5.4.0",
+		"tslint-plugin-prettier": "2.0.1",
+		"typescript": "3.7.3"
+	}
+}
